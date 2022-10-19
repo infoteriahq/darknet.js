@@ -4,9 +4,6 @@ darknet/
 include/
 build/
 
-*.js
-*.d.ts
-
 examples/dog.jpg
 examples/dog-with-boxes.png
 examples/eagle.jpg
