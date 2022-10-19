@@ -56,6 +56,7 @@ sed -i -e "s/OPENCV=[01]/OPENCV=${OPENCV}/g" ./Makefile
 sed -i -e "s/OPENMP=[01]/OPENMP=${OPENMP}/g" ./Makefile
 sed -i -e "s/CUDNN_HALF=[01]/CUDNN_HALF=${CUDNN_HALF}/g" ./Makefile
 sed -i -e "s/LIBSO=[01]/LIBSO=1/g" ./Makefile
+sed -i -e "s/-l:\$(LIBNAMESO)/-ldarknet/g" ./Makefile
 
 DEFAULT_ARCH=" -gencode arch=compute_35,code=sm_35 \
 -gencode arch=compute_50,code=[sm_50,compute_50] \
