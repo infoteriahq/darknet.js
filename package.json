@@ -7,10 +7,10 @@
   "repository": "https://github.com/bennetthardwick/darknet.js",
   "homepage": "https://github.com/bennetthardwick/darknet.js",
   "scripts": {
-    "build": "./install-script.sh && node-gyp rebuild",
+    "build": "./install-script.sh && node-gyp rebuild && ./post-install-script.sh",
     "clean": "node-gyp clean",
     "test": "./examples/example && jasmine",
-    "install": "./install-script.sh && node-gyp rebuild",
+    "install": "./install-script.sh && node-gyp rebuild && ./post-install-script.sh",
     "prepublishOnly": "npx tsc"
   },
   "gypfile": true,
